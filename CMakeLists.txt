@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.16 )
 
-project("gpiodtest")
+project("gpioshutdown")
 
 set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake" )
 
@@ -10,6 +10,6 @@ set( BUILD_MANIFEST
     main.cpp
 )
 
-add_executable(gpiodtest ${BUILD_MANIFEST})
+add_executable(gpioshutdown ${BUILD_MANIFEST})
 
-target_link_libraries(gpiodtest gpiodcxx gpiod)
+target_link_libraries(gpioshutdown gpiodcxx gpiod)
