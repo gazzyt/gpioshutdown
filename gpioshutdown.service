@@ -1,0 +1,12 @@
+[Unit]
+Description=Push button to shutdown
+After=multi-user.target
+
+[Service]
+User=root
+ExecStart=/home/pi/dev/gpiodtest/build/gpioshutdown
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
