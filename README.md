@@ -22,7 +22,7 @@ Running
 =======
 The application must be run as root otherwise the shutdown command will not succeed.
 
-Running as boot
+Running at boot
 ---------------
 The application is most useful when run at boot. To achieve this edit the file `gpioshutdown.service` to update the `ExecStart` line to point to your built executable. Then:
 
